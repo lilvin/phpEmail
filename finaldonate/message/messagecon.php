@@ -15,8 +15,8 @@ die("connection failed:".$con->connect_error);
 // Be sure to include the file you've just downloaded
 
 // Specify your authentication credentials
-$username   = "lilianKirito";
-$apikey     = "29748e398b5b4f31537215ae95f602d98c5ae89184a941e5c756fe3b610d23b3";
+$username   = "";
+$apikey     = "";
 // Specify the numbers that you want to send to in a comma-separated list
 // Please ensure you include the country code (+254 for Kenya in this case)
 
@@ -38,7 +38,7 @@ if(isset($_POST['sendmsg'])){
 
 //$recipients = $recipient_phone;
 //mysqli_result(mysqli_query("SELECT  mobile FROM users"),0);
-//"+254705895190";
+
 // And of course we want our recipients to know what we really do
 $txt=$_POST['message'];
 $message    = $txt;
